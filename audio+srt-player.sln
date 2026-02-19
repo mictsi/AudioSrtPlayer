@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSrtPlayer", "AudioSrtPlayer\AudioSrtPlayer.csproj", "{42CAB8E7-F741-589A-CCAA-B6D5ABD567BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42CAB8E7-F741-589A-CCAA-B6D5ABD567BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CAB8E7-F741-589A-CCAA-B6D5ABD567BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CAB8E7-F741-589A-CCAA-B6D5ABD567BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CAB8E7-F741-589A-CCAA-B6D5ABD567BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2F8E160-6413-4673-96F6-8CD28B5A0CB9}
+	EndGlobalSection
+EndGlobal
