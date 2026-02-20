@@ -195,7 +195,7 @@
                          AutomationProperties.Name="Subtitle lines">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Text}" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding DisplayText}" TextWrapping="Wrap" />
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>

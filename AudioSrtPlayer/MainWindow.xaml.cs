@@ -408,8 +408,9 @@ public partial class MainWindow : Window
             return;
         }
 
-        var current = Subtitles[index].Text.Replace(Environment.NewLine, " ");
-        CurrentSubtitleStatusText.Text = $"Current subtitle: {current}";
+        var subtitle = Subtitles[index];
+        var current = subtitle.Text.Replace(Environment.NewLine, " ");
+        CurrentSubtitleStatusText.Text = $"Current subtitle: [{subtitle.TimeRangeDisplay}] {current}";
     }
 
     private static List<SubtitleEntry> ParseSrt(string srtContent)
@@ -489,5 +490,13 @@ public partial class MainWindow : Window
 
 public sealed record SubtitleEntry(TimeSpan Start, TimeSpan End, string Text)
 {
+    public string TimeRangeDisplay => $"{FormatTimestamp(Start)} - {FormatTimestamp(End)}";
+    public string DisplayText => $"[{TimeRangeDisplay}] {Text}";
+
+    private static string FormatTimestamp(TimeSpan value)
+    {
+        return value.TotalHours >= 1 ? value.ToString("hh\\:mm\\:ss\\,fff") : value.ToString("mm\\:ss\\,fff");
+    }
+
     public override string ToString() => Text;
 }
